@@ -51,4 +51,4 @@ All necessary files for the StockView App have been uploaded to the repository. 
 17. **Mipmap Files:** Contains various resolution versions of the launcher icon for different device densities.
 
 ##Deployemnt
-**Netlify- stock-view-application.netlify.app
+Netlify- "stock-view-application.netlify.app"
