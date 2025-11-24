@@ -23,7 +23,7 @@ Sign up at Alpha Vantage to obtain a free API key. Place the key in "YOUR_API_KE
 - **Tested on Devices:** The app has been tested on devices like Pixel 5 and medium-sized desktops.
 
 ## Installation
-1. Clone the repository: git clone "https://github.com/sandhyapaliwal/stockviewapp.git"
+1. Clone the repository: git clone "https://github.com/sandhyapaliwal/stock-view-application.git"
 2. Open the project in Android Studio.
 3. Sync the Gradle files to download the required dependencies.
 4. Run the app on an Android device or emulator.
