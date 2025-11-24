@@ -49,3 +49,6 @@ All necessary files for the StockView App have been uploaded to the repository. 
 15. **ic-launcher-background.xml:** Defines the background drawable for the app's launcher icon.  
 16. **ic-launcher-foreground.xml:** Defines the foreground drawable for the app's launcher icon.  
 17. **Mipmap Files:** Contains various resolution versions of the launcher icon for different device densities.
+
+##Deployemnt
+**Netlify- stock-view-application.netlify.app
