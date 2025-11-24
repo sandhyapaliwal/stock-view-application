@@ -1,0 +1,42 @@
+@import "@fontsource/inter";/*importing inter font*/
+@tailwind base;/* Applies Tailwind's base styles (like resets)*/
+@tailwind components;/*Applies any custom components you may define.*/
+@tailwind utilities;/* Includes Tailwind's utility classes.*/
+/**/
+body {
+  @apply bg-custom-bg text-text-main;
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+}
+
+h1, h2, h3 {
+  @apply text-center font-bold text-primary;
+}
+
+.container {
+  @apply px-6 py-8 mx-auto;
+}
+
+input[type="text"], input[type="number"] {
+  @apply p-3 rounded-md bg-surface text-text-main border border-gray-700 focus:ring-2 focus:ring-primary;
+}
+
+button {
+  @apply px-4 py-2 bg-primary text-white rounded-md hover:bg-primary-dark transition-all duration-300;
+}
+
+.stock-list {
+  @apply space-y-6; /*to add vertical spacing between the stock list items.*/
+}
+
+.stock-item {
+  @apply p-6 bg-surface rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300;
+}
+
+.stock-list-header {
+  @apply p-6 bg-surface rounded-md shadow-md mb-8 flex justify-center items-center gap-4;
+}
+
+.stock-chart-container {
+  @apply mt-10;
+}
