@@ -1,18 +1,51 @@
-# stock-view-application
+# STOCKVIEW APP
 
-A React + Vite based application for managing stock wishlists.
+## Overview
+StockView App is an Android application that allows users to search for stock information by entering stock symbols. The app fetches data from the Alpha Vantage API and displays key stock metrics, including price and percentage change.
 
----
+## Features
+- **Search Stock Symbols:** Users can input stock symbols (e.g., AAPL, TSLA, AMZN, GOOGL, etc.) to fetch information.
+- **Real-time Data:** Retrieves live stock data from the Alpha Vantage API.
+- **User-Friendly Interface:** Designed with a clean and intuitive layout for easy navigation.
 
-## About This Project
+**Note:** Some APIs, including Alpha Vantage, allow anonymous access or provide a default API key for limited requests. It is advised to get your free key, place it in the code, then search for stocks to get the latest data.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Prerequisites
+- Android Studio
+- Kotlin support in Android Studio
+- Access to the Alpha Vantage API (consider using an API key for more reliable requests).
 
-(Currently, two official plugins are available:)
+## API Key
+Sign up at Alpha Vantage to obtain a free API key. Place the key in "YOUR_API_KEY" in `StockRepository.kt` file.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Android Compatibility
+- **Minimum SDK Version:** 23 (Android 6.0, Marshmallow)
+- **Tested on Devices:** The app has been tested on devices like Pixel 5 and medium-sized desktops.
 
-## Expanding the ESLint configuration
+## Installation
+1. Clone the repository: git clone "https://github.com/sandhyapaliwal/stockviewapp.git"
+2. Open the project in Android Studio.
+3. Sync the Gradle files to download the required dependencies.
+4. Run the app on an Android device or emulator.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## File Structure
+All necessary files for the StockView App have been uploaded to the repository. Users can ignore certain files that may not be relevant for their needs, focusing on the main files related to functionality and implementation.
+
+### MAIN FILES
+1. **MainActivity.kt:** The entry point of the app, handling user interactions and displaying stock information.  
+2. **StockApiService.kt:** Defines the API endpoints and methods for fetching stock data from the Alpha Vantage API.  
+3. **StockData.kt:** Models the data structure for the stock information retrieved from the API.  
+4. **StockRepository.kt:** Manages data operations, providing a clean API for data access to the rest of the application.  
+5. **StockViewModel.kt:** Serves as the communication center between the UI and the repository, handling data processing and business logic.  
+6. **activity_main.xml:** The layout file for the main activity, defining the user interface elements.  
+7. **build.gradle.kts (project):** The top-level Gradle build file containing configuration options common to all modules.  
+8. **build.gradle.kts (module: app):** Contains the application-specific build configurations and dependencies for the app module.  
+9. **settings.gradle.kts:** Manages the Gradle settings and project structure, including included modules.  
+10. **styles.xml:** Defines the app's styles, including themes and button styles.  
+11. **attrs.xml:** Contains custom attributes used in custom views within the app.  
+12. **colors.xml:** Defines color resources used throughout the app for a consistent color scheme.  
+13. **strings.xml:** Stores string resources for easy localization and management of text within the app.  
+14. **themes.xml:** Defines themes for the app, allowing customization of the overall appearance.  
+15. **ic-launcher-background.xml:** Defines the background drawable for the app's launcher icon.  
+16. **ic-launcher-foreground.xml:** Defines the foreground drawable for the app's launcher icon.  
+17. **Mipmap Files:** Contains various resolution versions of the launcher icon for different device densities.
